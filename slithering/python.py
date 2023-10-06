@@ -1,18 +1,13 @@
 from datetime import date
+from animal import Animal
 
 
-class Python:
+class Python(Animal):
 
-    def __init__(self, name, species, food):
-        self.name = name
-        self.species = species
+    def __init__(self, name, species, food, chip_num):
+        super().__init__(name, species, food, chip_num)
         self.slithering = True
-        self.food = food
-        self.date_added = date.today()
-
-    def __str__(self):
-        return f"{self.name} is a {self.species} who eats {self.food}."
 
     def feed(self):
         print(
-            f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}.')
+            f"""Some live {self.food} were placed in {self.name}'s enclosure for him to eat on {date.today().strftime("%m/%d/%Y")}.""")

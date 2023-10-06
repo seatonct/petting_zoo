@@ -4,22 +4,22 @@ from slithering import Garter_Snake, Green_Snake, King_Snake, Rat_Snake, Python
 from swimming import Catfish, Eel, Sting_Ray, Tiger_Shark, Tuna
 from attractions import PettingZoo, SnakePit, Wetlands
 
-miss_fuzz = Llama("Miss Fuzz", "domestic llama", "morning", "Llama Chow")
-andy = Donkey("Andy", "donkey", "midday", "hay", 1)
-gary = Goat("Gary", "goat", "midday", "grass")
-barry = Sheep("Barry", "sheep", "afternoon", "grass")
+miss_fuzz = Llama("Miss Fuzz", "domestic llama", "morning", "Llama Chow", 1)
+andy = Donkey("Andy", "donkey", "midday", "hay", 2)
+gary = Goat("Gary", "goat", "midday", "grass", 3)
+barry = Sheep("Barry", "sheep", "afternoon", "grass", 4)
 lil_sebastian = Miniature_Horse(
-    "Lil Sebastian", "miniature horse", "afternoon", "hay")
-brayden = Rat_Snake("Brayden", "rat snake", "rats")
-smithers = King_Snake("Smithers", "king snake", "snakes")
-lacy = Garter_Snake("Lacy", "garter snake", "mice")
-alex = Green_Snake("Alex", "green snake", "bugs")
-snuggles = Python("Snuggles", "python", "rodents")
-ray = Sting_Ray("Ray", "sting ray", "crustaceans")
-peter_the_eater = Tiger_Shark("Peter the Eater", "tiger shark", "fish")
-bubba = Tuna("Bubba", "tuna", "kelp")
-wriggles = Eel("Wriggles", "eel", "algae")
-larry = Catfish("Larry", "catfish", "algae")
+    "Lil Sebastian", "miniature horse", "afternoon", "hay", 5)
+brayden = Rat_Snake("Brayden", "rat snake", "rats", 6)
+smithers = King_Snake("Smithers", "king snake", "snakes", 7)
+lacy = Garter_Snake("Lacy", "garter snake", "mice", 8)
+alex = Green_Snake("Alex", "green snake", "bugs", 9)
+snuggles = Python("Snuggles", "python", "rodents", 10)
+ray = Sting_Ray("Ray", "sting ray", "crustaceans", 11)
+peter_the_eater = Tiger_Shark("Peter the Eater", "tiger shark", "fish", 12)
+bubba = Tuna("Bubba", "tuna", "kelp", 13)
+wriggles = Eel("Wriggles", "eel", "algae", 14)
+larry = Catfish("Larry", "catfish", "algae", 15)
 
 varmint_village = PettingZoo("Varmint Village")
 slither_inn = SnakePit("The Slither Inn")
@@ -45,6 +45,7 @@ critter_cove.add_animal(larry)
 
 # print(varmint_village.last_critter_added)
 
+
 # def attractions_report(attraction):
 #     print(f"{attraction.name} is where you'll find {attraction.description}, like \n")
 
@@ -60,5 +61,5 @@ critter_cove.add_animal(larry)
 
 # print(f'{barry.name} the {barry.species} is available to pet during the {barry.shift} shift.')
 
-# print(snuggles)
-# print(snuggles.feed())
+# print(brayden)
+print(snuggles.feed())
