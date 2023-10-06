@@ -5,7 +5,7 @@ from swimming import Catfish, Eel, Sting_Ray, Tiger_Shark, Tuna
 from attractions import PettingZoo, SnakePit, Wetlands
 
 miss_fuzz = Llama("Miss Fuzz", "domestic llama", "morning", "Llama Chow")
-andy = Donkey("Andy", "donkey", "midday", "hay")
+andy = Donkey("Andy", "donkey", "midday", "hay", 1)
 gary = Goat("Gary", "goat", "midday", "grass")
 barry = Sheep("Barry", "sheep", "afternoon", "grass")
 lil_sebastian = Miniature_Horse(
@@ -43,19 +43,20 @@ critter_cove.add_animal(bubba)
 critter_cove.add_animal(wriggles)
 critter_cove.add_animal(larry)
 
+# print(varmint_village.last_critter_added)
 
-def attractions_report(attraction):
-    print(f"{attraction.name} is where you'll find {attraction.description}, like \n")
+# def attractions_report(attraction):
+#     print(f"{attraction.name} is where you'll find {attraction.description}, like \n")
 
-    for animal in attraction.animals:
-        print(f"* {animal.name} the {animal.species}")
+#     for animal in attraction.animals:
+#         print(f"* {animal.name} the {animal.species}")
 
-    print("\n")
+#     print("\n")
 
 
-attractions_report(varmint_village)
-attractions_report(slither_inn)
-attractions_report(critter_cove)
+# attractions_report(varmint_village)
+# attractions_report(slither_inn)
+# attractions_report(critter_cove)
 
 # print(f'{barry.name} the {barry.species} is available to pet during the {barry.shift} shift.')
 
