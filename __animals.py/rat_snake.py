@@ -1,8 +1,8 @@
 from datetime import date
-from animal import Animal
+from .animal import Animal
 
 
-class Python(Animal):
+class Rat_Snake(Animal):
 
     def __init__(self, name, species, food, chip_num):
         super().__init__(name, species, food, chip_num)
@@ -10,4 +10,4 @@ class Python(Animal):
 
     def feed(self):
         print(
-            f"""Some live {self.food} were placed in {self.name}'s enclosure for him to eat on {date.today().strftime("%m/%d/%Y")}.""")
+            f'{self.name} was fed live {self.food} on {date.today().strftime("%m/%d/%Y")}.')
