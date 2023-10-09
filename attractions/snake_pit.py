@@ -1,12 +1,7 @@
-class SnakePit:
+from .attraction import Attraction
 
-    def __init__(self, name):
-        self.name = name
-        self.description = "more snakes than an Indiana Jones movie"
-        self.animals = list()
 
-    def __str__(self):
-        return f"{self.name} has {self.description}."
+class SnakePit(Attraction):
 
-    def add_animal(self, animal):
-        return self.animals.append(animal)
+    def __init__(self, name, description):
+        super().__init__(name, description)
