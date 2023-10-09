@@ -20,9 +20,11 @@ peter_the_eater = TigerShark("Peter the Eater", "tiger shark", "fish", 12)
 bubba = Tuna("Bubba", "tuna", "kelp", 13)
 wriggles = Eel("Wriggles", "eel", "algae", 14)
 larry = Catfish("Larry", "catfish", "algae", 15)
+dolly = Llama("Dolly", "miniature llama", "afternoon", "hay", 16)
+snappy = Python("Snappy", "python", "rodents", 17)
 
 varmint_village = PettingZoo(
-    "Varmint Village", "critters that like to dig and scurry")
+    "Varmint Village", "critters that love to be petted")
 slither_inn = SnakePit(
     "The Slither Inn", "more snakes than an Indiana Jones movie")
 critter_cove = Wetlands("Critter Cove", "aquatic wonders")
@@ -68,5 +70,9 @@ critter_cove.add_animal(larry)
 # snuggles.slither()
 # lil_sebastian.run()
 
-for animal in varmint_village.animals:
-    print(animal)
+critter_cove.add_animal_pythonic(dolly)
+slither_inn.add_animal_type_check(dolly)
+slither_inn.add_animal_pythonic(dolly)
+
+# for animal in varmint_village.animals:
+#     print(animal)
